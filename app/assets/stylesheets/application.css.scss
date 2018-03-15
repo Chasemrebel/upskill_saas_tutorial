@@ -19,7 +19,7 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-h1, h2, h3 {
+h1, h2, h3, p {
     font-family: 'Racing Sans One', sans-serif;
 }
 
@@ -30,9 +30,11 @@ h1, h2, h3 {
     background: -webkit-linear-gradient(to right, #02111D, #037BB5, #02111D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #02111D, #037BB5, #02111D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-//Navbar text color / hover
+//Navbar Style
 .navbar-default .navbar-brand, 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 30px;
     color: #d8d8d8;
     &:hover {
         text-decoration: underline;
@@ -40,12 +42,29 @@ h1, h2, h3 {
         color: #d8d8d8;
     }
 }
-//Removing border
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d8d8d8;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid #d8d8d8;
+    &:hover, &:focus {
+        background-color: #02111D;
+        opacity: 0.75;
+    }
+}
+
 .navbar {
     border: none;
-    
 }
-//Making layout more fluid
+
+.navbar-default .navbar-nav > li > a, {
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+//Home Page Styles
 .home-callout {
     margin-top: -20px;
     padding-top: 50px;
@@ -55,4 +74,8 @@ h1, h2, h3 {
 
 .fa {
     padding-right: 5px;
+}
+
+.about {
+    font-size: 20px;
 }
