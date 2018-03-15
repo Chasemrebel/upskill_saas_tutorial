@@ -14,8 +14,10 @@
  *= require_self
  */
  
- @import 'bootstrap-sprockets';
- @import 'bootstrap';
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 h1, h2, h3 {
     font-family: 'Racing Sans One', sans-serif;
@@ -49,4 +51,8 @@ h1, h2, h3 {
     padding-top: 50px;
     padding-bottom: 100px;
     color: white;
+}
+
+.fa {
+    padding-right: 5px;
 }
