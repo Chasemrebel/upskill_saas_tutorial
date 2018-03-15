@@ -21,38 +21,32 @@ h1, h2, h3 {
     font-family: 'Racing Sans One', sans-serif;
 }
 
+//Background and navbar gradient
 .navbar, .home-callout {
     //Gradient provided by @_igosh at uiGradients.com
     background: #02111D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #02111D, #037BB5, #02111D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #02111D, #037BB5, #02111D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.navbar-default .navbar-brand {
-    color: #d8d8d8;
-}
-
+//Navbar text color / hover
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
     color: #d8d8d8;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: white;
+        color: #d8d8d8;
+    }
 }
-
+//Removing border
 .navbar {
     border: none;
     
 }
-
+//Making layout more fluid
 .home-callout {
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
-    color: white;
-}
-
-
-.navbar-default .navbar-brand:hover {
-    color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
     color: white;
 }
